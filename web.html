@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITR-Clubs</title>
+  <link rel="stylesheet" href="rick.css">
+</head>
+<body onload="displayDateTime()">
+  <div class="Date">
+    <p id="datetime"></p>
+  </div>
+  <div class="paragraph">
+  <p>WELCOME TO OUR PRICE PANEL</p>
+  <p>choose from it</p>
+</div>
+  <header id="changebg">
+<div class="main">
+  <div class="logo">
+    <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_National_Institute_of_Technology_Rourkela_cbc972d135_33ec404c12.png">
+    </div>
+    <div class="title">
+      <h1 id="heading">SHOPPERS STOP</h1>
+    </div>
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">ELECTRONICS ITEMS</a></li>
+    <li><a href="#">GROCERY ITEMS</a></li>
+    <li><a href="#">TOY SECTION</a></li>
+    <li><a href="#">CLOTH SECTION</a></li>
+  </ul>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+  <div class="closebtn" onclick="togglePopup()">&times;</div>
+  <h1>Welcome</h1>
+  <p>Welcome to my trial Website showing various prices in NITRKL</p>
+    </div>  
+</div>
+</header>
+<footer>
+  Name-DEBANJAN MUKHERJEE<br>
+  Roll No.-122ID0416
+</footer>
+  <div class="button">
+    <button onclick="togglePopup()" class="btn" >Prompt</button>
+    <button onclick="change()" class="btn">Change MY COLOR</button>
+    <button onclick="changeHeading()" class="btn">Change MY HEAD</button>
+  </div>
+  <script>function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  function changeHeading() {
+          setTimeout(function(){document.getElementById("heading").innerHTML = "Clubs- Find your Passion Here"},5000);
+        }
+      function change()
+      {
+        document.getElementById("changebg").style.backgroundImage="https://www.monsterinsights.com/wp-content/uploads/2019/11/breathtaking-online-shopping-statistics-you-never-knew.png";
+      }
+      function displayDateTime() {
+        var date = new Date();
+        document.getElementById("datetime").innerHTML = date;
+      }
+  </script>
+</div>
+</body>
+</html>
